@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Sword Goes Down On Da Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sword Goes Down On Da Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_The_Case</name>
+        <label>Delete The Case</label>
+        <locationX>298</locationX>
+        <locationY>51</locationY>
+        <inputReference>varCase</inputReference>
+    </recordDeletes>
+    <startElementReference>Delete_The_Case</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>varCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>
